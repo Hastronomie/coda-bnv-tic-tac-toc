@@ -1,0 +1,17 @@
+#Makefile
+NAME = tic-tac-toe 
+
+SRCS = main.c \
+	tic-tac-toe.c \
+    afficherTab.c \
+	initTab.c
+
+all: $(NAME)
+
+$(NAME): $(SRCS)
+	gcc $(SRCS) -o $(NAME)
+
+fclean:
+	rm -f $(NAME)
+
+re: fclean all
