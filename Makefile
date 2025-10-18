@@ -2,9 +2,10 @@
 NAME = tic-tac-toe 
 
 SRCS = main.c \
-	tic-tac-toe.c \
     afficherTab.c \
-	initTab.c
+	initTab.c \
+	gameOver.c \
+	reponses.c
 
 all: $(NAME)
 
